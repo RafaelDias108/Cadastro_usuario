@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- boostrap 4.5.0 -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário - Cadastro de clientes - P2</title>
+</head>
+
+<body>
+    <form id="form_contato">
+        <h3>Cadastro de Clientes</h3>
+
+        <!-- alerta de erro nos dados do form -->
+        <div class="alert alert-warning alert-dismissible fade show" id="alerta" role="alert">
+            Alguns erros foram encontrados
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+
+        <h4>Dados Pessoais</h4>
+        <div class="form-col">
+            <div class="form-group">
+                <label>Nome</label>
+                <input type="text" class="form-control validar" id="inputNome" data-toggle="tooltip" data-placement="bottom" title="Entre com seu nome">
+                <div class="invalid-feedback" id="msgErro" aria-disabled="true">
+                    Por favor, preencha com seu nome.
+                </div>
+
+            </div>
+            <div class="form-group ">
+                <label for="inputEmail">E-mail
+                    <input type="email" name="email" class="form-control validar" data-toggle="tooltip" data-placement="bottom" title="Entre com seu e-mail" id="inputEmail" required
+                        maxlength="60" size='65'>
+                    <div class="invalid-feedback">
+                        Por favor, escolha um e-mail válido.
+                    </div>
+                </label>
+            </div>
+            <div class="row">
+
+                <div class="col">
+                    <label>CPF:</label>
+                    <input type="text" class="form-control cpf validar" data-toggle="tooltip" data-placement="bottom" title="Entre com seu CPF" id="cpf" maxlength="14" minlength="11">
+                    <div class="invalid-feedback">
+                        Campo Obrigatório.
+                    </div>
+                </div>
+
+                <div class="col">
+                    <label>Telefone:</label>
+                    <input type="tel" id="telefone" data-toggle="tooltip" data-placement="bottom" title="Entre com seu telefone" class="form-control validar">
+                    <div class="invalid-feedback">
+                        Campo Obrigatório.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- dados pessoais -->
+
+        <h4>Endereço</h4>
+        <div class="form-group">
+            <div class="form-row">
+                <div class="col-4">
+                    <label for="inputCEP">CEP:</label>
+                    <input type="text" name="cep" value="" size="10" maxlength="9" class="form-control validar" data-toggle="tooltip" data-placement="bottom" title="Entre com seu CEP" id="cep">
+                    <div class="invalid-feedback ">
+                        Campo Obrigatório.
+                    </div>
+                </div>
+                <div class="col">
+                    <label for="inputAddress1">Rua:</label>
+                    <input type="text" name="rua" id="rua" data-toggle="tooltip" data-placement="bottom" title="Entre com nome da Rua" size="60" class="form-control validar">
+                    <div class="invalid-feedback">
+                        Campo Obrigatório.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="form-row">
+                <div class="col-4">
+                    <label for="inputNumber">Número:</label>
+                    <input type="number" class="form-control validar" data-toggle="tooltip" data-placement="bottom" title="Entre com número da Rua" id="inputNumber" min="0">
+                    <div class="invalid-feedback">
+                        Campo Obrigatório.
+                    </div>
+                </div>
+                <div class="col">
+                    <label for="inputAddress2">Complemento:</label>
+                    <input type="text" class="form-control" data-toggle="tooltip" data-placement="bottom" title="Apartamento/casa/Beco" id="inputAddress2">
+                </div>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col">
+                <label>Bairro:</label>
+                <input type="text" name="bairro" id="bairro" size="40" class="form-control validar" data-toggle="tooltip" data-placement="bottom" title="Entre com seu Bairro">
+                <div class="invalid-feedback">
+                    Campo Obrigatório.
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="row">
+                <div class="col">
+                    <label for="inputCity">Cidade:</label>
+                    <input type="text" name="cidade" id="cidade" size="40" class="form-control validar" data-toggle="tooltip" data-placement="bottom" title="Entre com sua Cidade">
+                    <div class="invalid-feedback">
+                        Campo Obrigatório.
+                    </div>
+                </div>
+                <div class="col-5">
+                    <label for="inputEstado">Estado</label>
+                    <select id="uf" name="uf" class="form-control" data-toggle="tooltip" data-placement="bottom" title="Escolha o seu Estado">
+                        <option selected></option>
+                        <option>Rio de Janeiro</option>
+                        <option>Espirito Santo</option>
+                        <option>Minas Gerais</option>
+                        <option>São Paulo</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="btn_form">
+            <button type="button" class="btn btn-primary btn-lg" data-toggle="tooltip" data-placement="bottom" title="Salvar" id="btn_salvar">SALVAR</button>
+        </div>
+    </form>
+
+    <form class="exibirCadastro" id="exibirCadastro">
+        <h3>Cadastro de Clientes</h3>
+        <div class="alert alert-success" role="alert">
+            Cliente salvo com sucesso !
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+
+        <div class="dadosPessoais boxCadastro">
+
+
+
+        </div>
+        <div class="endereco boxCadastro">
+
+
+        </div>
+
+        <div class="btn_form btn_voltar">
+            <button type="button" class="btn btn-outline-primary btn-lg" data-toggle="tooltip" data-placement="bottom" title="Voltar para cadastrar" id="btn_voltar">VOLTAR</button>
+        </div>
+
+    </form>
+
+
+
+    <!-- jquery.js 3.5.1 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <!-- plugin mascara dos inputs -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+
+    <!-- plugin busca das informações do CEP -->
+    <script src="./cep.js"></script>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

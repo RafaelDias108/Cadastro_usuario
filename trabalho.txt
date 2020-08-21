@@ -1,0 +1,38 @@
+Implementar formulário de cadastro de cliente seguindo o protótipo abaixo.
+
+https://xd.adobe.com/view/78db4ecc-963c-4486-58ec-ce239a92a5c9-0eea/
+
+ 
+
+Comportamento:
+
+Ao clicar em salvar, o formulário deverá ser validado.
+
+Em caso de erro, o erro deverá ser mostrado abaixo do campo correspondente, e uma mensagem de aviso deve ser exibida no topo do formulário com o seguinte conteúdo "Alguns erros foram encontrados".
+
+Em caso de sucesso, o formulário de ser escondido, e os dados do clientes exibidos na tela, assim como um botão de voltar no final e alerta no topo com o seguinte conteúdo "Cliente salvo com sucesso".
+
+Validação com javascript:
+
+  Com exceção do campo de complemento, todos são obrigatórios
+  Email deve conter um @, mas não pode ser no início e nem no final
+  Telefone deve conter 15 caracteres
+  CPF deve conter 14 caracteres
+  CEP deve conter 9 caracteres
+Máscaras:
+
+  CPF no formato: 999.999.999-99
+  Telefone no formato: (99) 99999-9999
+  CEP no formato: 99999-999
+pontuação:
+
+HTML e CSS: 3 pontos
+Validação com javascript: 3 pontos
+Exibir alertas de erro e sucesso: 1 ponto
+Alternar entre página de resultado e formulário: 2 pontos
+Máscaras: 1 ponto
+Poderá ser usado framework bootstrap ou similar, assim como jQuery e plugins do jQuery
+
+Referência do uso do jQuery e pligins na aula do dia 15/06.
+
+A entrega pode ser feita em arquivo compactado ou link do repositório no github.

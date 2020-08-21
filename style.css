@@ -1,0 +1,66 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #7156C9;
+}
+
+form {
+    width: 600px;
+    height: auto;
+    background-color: #fff;
+    padding: 40px;
+    margin: 50px auto;
+}
+
+h3 {
+    text-align: center;
+    color: #7156C9;
+    font-size: 18pt;
+    margin-bottom: 40px;
+}
+
+h4 {
+    color: #7156c98f;
+    font-size: 13pt;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+label {
+    color: #797979;
+}
+
+.btn_form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.btn_form button {
+    width: 50%;
+    border-radius: 10px;
+    margin-top: 30px;
+    background-color: #7156C9;
+    border-color: #7156C9;
+}
+
+.btn_form button:hover {
+    background-color: #7156C9;
+    border-color: #7156C9;
+}
+
+.btn_voltar button {
+    background-color: transparent;
+    color: #7156C9;
+}
+
+.boxCadastro {
+    background-color: #cecece;
+    width: 100%;
+    padding: 12px 20px;
+    margin-top: 30px;
+}
+
+.exibirCadastro {
+    display: none;
+}
