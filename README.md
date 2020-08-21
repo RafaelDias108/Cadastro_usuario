@@ -12,8 +12,8 @@
 ⚡ Stack of used technology
 </h3>
 <ul>
-<li><img src="https://simpleicons.org/icons/bootstrap.svg"></img><a>https://getbootstrap.com/</a></li>
-<li><img src="https://simpleicons.org/icons/jquery.svg"></img><a>https://jquery.com/</a></li>
+<li><a>https://getbootstrap.com/</a></li>
+<li><a>https://jquery.com/</a></li>
 </ul>
 </br>
 </hr>
