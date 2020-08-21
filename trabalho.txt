@@ -24,13 +24,7 @@ Máscaras:
   CPF no formato: 999.999.999-99
   Telefone no formato: (99) 99999-9999
   CEP no formato: 99999-999
-pontuação:
-
-HTML e CSS: 3 pontos
-Validação com javascript: 3 pontos
-Exibir alertas de erro e sucesso: 1 ponto
-Alternar entre página de resultado e formulário: 2 pontos
-Máscaras: 1 ponto
+  
 Poderá ser usado framework bootstrap ou similar, assim como jQuery e plugins do jQuery
 
 Referência do uso do jQuery e pligins na aula do dia 15/06.

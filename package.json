@@ -1,0 +1,26 @@
+{
+  "name": "cadastro",
+  "version": "1.0.0",
+  "description": "sistema de cadastro de usuário para projeto da faculdade\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D front end da faculdade.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rafaeld108/cadastro_de_usuario.git"
+  },
+  "keywords": [
+    "sistema",
+    "cadastro",
+    "usuario",
+    "html",
+    "javascript"
+  ],
+  "author": "Rafael Dias",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rafaeld108/cadastro_de_usuario/issues"
+  },
+  "homepage": "https://github.com/rafaeld108/cadastro_de_usuario#readme"
+}
