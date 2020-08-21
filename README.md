@@ -12,8 +12,8 @@
 ⚡ Stack of used technology
 </h3>
 <ul>
-<li><a>https://getbootstrap.com/</a></li>
-<li><a>https://jquery.com/</a></li>
+<li><a href="https://getbootstrap.com/">https://getbootstrap.com/</a></li>
+<li><a href="https://jquery.com/">https://jquery.com/</a></li>
 </ul>
 </br>
 </hr>
